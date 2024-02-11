@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Ubuntu, serif;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+button{
+    font-family: Trirong, serif;
+    font-size: 1.1em;
+    padding: 5px;
+    background-color: #D4E6F1;
+    border-radius: 11px;
+    border-color: #D4E6F1;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes fromLeft{
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.fromLeft{
+    transform:translateX(-500px);
+    animation-name: fromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromRight{
+    from{
+        transform: translateX(500px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.fromRight{
+    transform:translateX(500px);
+    animation-name: fromRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.item1{
+    background-color: #FADBD8;
+}
+.item2{
+    animation-delay: 1s;
+    background-color: #D6EAF8;
+}
+.item3{
+    animation-delay: 2s;
+    background-color: #FDEBD0;
+}
+.item4{
+    animation-delay: 3s;
+    background-color: #D0ECE7;
+}
+.item5{
+    animation-delay: 4s;
+    background-color: azure;
+}
+.item6{
+    animation-delay: 5s;
+}
+.item{
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 7px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
